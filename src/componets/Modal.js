@@ -2,7 +2,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
-const ModalComponet = ({ title, tecnologis,img}) => {
+import "./Moda.css"
+const ModalComponet = ({ title, tecnologis,img,carateristicas,link}) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -17,7 +18,10 @@ const ModalComponet = ({ title, tecnologis,img}) => {
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{tecnologis}<br/>
-        <img src={img}></img>
+        {carateristicas}
+        podes ver el codigo  <a href={link}>aca</a>
+ 
+        <img className="image" src={img}></img>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

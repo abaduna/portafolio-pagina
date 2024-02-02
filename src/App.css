@@ -1,38 +1,65 @@
-.App {
+.contenedor {
+  position: relative;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imagefondo{
+  height: 100vh;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Puedes ajustar el color del texto según tus necesidades */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-weight: bold; /* Puedes ajustar el peso de la fuente según tus necesidades */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about{
+max-width: 75%;
+margin: 0 auto;
+font-size: larger;
+}
+.portafolio{
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.portafolioPrimario{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  height: 50vh;
+  background-color: rgba(190, 194, 140, 0.445);
+  width: 100%;
+  align-items: center;
+  display: flex; /* Agrega esta línea para activar las propiedades flex */
+  align-items: center;
+  flex-direction: column;
+}
+.portafolioSecundario{
+  justify-content: center;
+
+  height: 50vh;
+  background-color: rgba(204, 144, 95, 0.445);
+  width: 100%;
+  align-items: center;
+  display: flex; /* Agrega esta línea para activar las propiedades flex */
+  align-items: center;
+  flex-direction: column;
+}
+.contacto{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  max-width: 75%;
+  height: 100vh;
+}
+.foter {
+  background-color: black;
+  width: 100%;
+  height: 35px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
