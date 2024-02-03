@@ -5,10 +5,11 @@ import reproductor from "./asets/img/reproductor.jpg";
 import Contacto from "./componets/Contacto";
 import Footer from "./componets/Foter";
 import fondo from "./asets/img/fondo.jpg";
+import ppot from "./asets/img/ppot.png"
 import "./App.css";
 function App() {
   return (
-    <div>
+    <div className="body">
       <div className="contenedor">
         <img className="imagefondo" src={fondo}></img>
         <div className="texto">
@@ -37,6 +38,10 @@ function App() {
           <ModalComponet
             title="Piedra, papel y tijera"
             tecnologis="React scoket.io"
+            img={ppot}
+            carateristicas="multijugador con salas para jugar"
+            link="https://github.com/abaduna/piedra-papel-tijera-scoket.io"
+            funcion={["se puede jugar de manera individual","se puede jugar con otra persona solo entrando a la misma sala"]}
           />
         </div>
         <div className="portafolioSecundario">
@@ -48,6 +53,7 @@ function App() {
             img={reproductor}
             carateristicas="Reproductos de musica que descarga musica de youtube"
             link="https://github.com/abaduna/reproducto-musica-react-express"
+            funcion={["reproduce una lista de canciones","se puede descargar de youtube(beta)","se puede adelantar y pausar"]}
           />
         </div>
         <div className="portafolioPrimario">
@@ -59,6 +65,7 @@ function App() {
             img={turnos}
             carateristicas="podes eligir un medico y el horario disponible,agregar un nuevo medico."
             link="https://github.com/abaduna/turnos-express-react"
+            funcion={["Elegir el médico y los horarios disponibless","Seleccionar una hora disponible","Agregar un nuevo medico"]}
           />
         </div>
       </div>
