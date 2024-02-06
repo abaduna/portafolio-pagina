@@ -17,7 +17,7 @@ const ModalComponet = ({
   const handleShow = () => setShow(true);
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="dark" onClick={handleShow}>
         Ver mas
       </Button>
       <Modal

@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #926f0ea8;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+   flex-direction: column;
+    list-style-type: none;
+  }
+  .lista li {
+    float: left;
+    text-decoration: none;
+  }
+  
+  .lista li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .lista li a:hover {
+    background-color: #111;
+  }

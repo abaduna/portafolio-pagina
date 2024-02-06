@@ -7,17 +7,24 @@ import Footer from "./componets/Foter";
 import fondo from "./asets/img/fondo.jpg";
 import ppot from "./asets/img/ppot.png"
 import "./App.css";
+import Menu from "./componets/menu";
+import { useState } from "react";
 function App() {
+  const [seeMenu,setSeeMenu]=useState(false)
   return (
     <div className="body">
-      <div className="contenedor">
+      <div className="menu">
+        <button className="btn-menu" onClick={()=>setSeeMenu(!seeMenu)}> Menu</button>
+        {seeMenu&& <div className="fixded-Menu"><Menu/></div>}
+      </div>
+      <div className="contenedor"  id="inicio">
         <img className="imagefondo" src={fondo}></img>
         <div className="texto">
           <h1>Arturo Baduna</h1>
           <h2>Full stack</h2>
         </div>
       </div>
-      <div className="about">
+      <div className="about"  id="about">
         <p>
           ¡Hola! Soy Arturo, un entusiasta de la tecnología con 25 años y una
           curiosidad interminable. Como programador fullstack especializado en
@@ -30,7 +37,7 @@ function App() {
           tecnológico. ¡Bienvenido a mi viaje de innovación y desarrollo!
         </p>
       </div>
-      <div className="portafolio">
+      <div className="portafolio"  id="porfolio">
         <h2>Proyect</h2>
         <div className="portafolioPrimario">
           <h3>Piedra, papel y tijera</h3>
@@ -69,9 +76,13 @@ function App() {
           />
         </div>
       </div>
-      <div className="contacto">
+      <div className="contacto" id="contacto">
         <h3>Contacto</h3>
         <Contacto className="form" />
+      </div>
+      <div className="menu-completo">
+            <Menu></Menu>
+      
       </div>
       <div className="foter">
         <Footer></Footer>

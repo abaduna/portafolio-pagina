@@ -66,3 +66,24 @@ font-size: larger;
 .body{
   background-color: rgba(187, 99, 27, 0.26);
 }
+.btn-menu{
+  outline: none!;
+  border: 1px solid rgba(205, 99, 12, 0.857);
+  position: fixed;
+  background-color: rgba(205, 99, 12, 0.711);
+  border-radius: 25px;
+  padding: 15px;
+  bottom: 20px;
+  color:  white;
+  right: 20px;
+}
+.btn-menu:hover{
+  
+  background-color: rgba(235, 117, 7, 0.711);
+ 
+}
+.fixded-Menu{
+position: fixed;
+top:20px ;
+width: 100%;
+}
