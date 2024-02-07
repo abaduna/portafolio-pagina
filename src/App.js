@@ -77,7 +77,7 @@ function App() {
         </div>
       </div>
       <div className="contacto" id="contacto">
-        <h3>Contacto</h3>
+        <h3 className="title-contanto">Contacto</h3>
         <Contacto className="form" />
       </div>
       <div className="menu-completo">

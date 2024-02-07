@@ -16,6 +16,7 @@
   font-weight: bold; /* Puedes ajustar el peso de la fuente según tus necesidades */
 }
 .about{
+padding: 35px;
 max-width: 75%;
 margin: 0 auto;
 font-size: larger;
@@ -49,12 +50,19 @@ font-size: larger;
   flex-direction: column;
 }
 .contacto{
+  
+  justify-content: center;
   text-align: center;
   display: flex;
   margin: auto;
   flex-direction: column;
   max-width: 75%;
-  height: 100vh;
+  
+  
+}
+.title-contanto{
+  border: 1px solid black;
+  margin: 25px;
 }
 .foter {
   background-color: black;
