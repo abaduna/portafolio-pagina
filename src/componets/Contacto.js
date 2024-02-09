@@ -6,8 +6,7 @@ import "./Contacto.css";
 const Contacto = () => {
   return (
     <div className="formulario">
-      <p>👇👇Estamos ansiosos por leerte👇👇 </p>
-      <p>👇👇👇</p>
+      
       <form
         target="_blank"
         action="https://formsubmit.co/artuelrey@gmail.com"

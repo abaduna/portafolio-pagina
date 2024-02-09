@@ -54,15 +54,14 @@ font-size: larger;
   justify-content: center;
   text-align: center;
   display: flex;
-  margin: auto;
+  margin:  0 auto;
   flex-direction: column;
   max-width: 75%;
   
   
 }
 .title-contanto{
-  border: 1px solid black;
-  margin: 25px;
+ 
 }
 .foter {
   background-color: black;
