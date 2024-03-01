@@ -49,6 +49,7 @@ function App() {
             carateristicas="multijugador con salas para jugar"
             link="https://github.com/abaduna/piedra-papel-tijera-scoket.io"
             funcion={["se puede jugar de manera individual","se puede jugar con otra persona solo entrando a la misma sala"]}
+            urlVido={`https://www.youtube.com/embed/qtgtLXWalT0?si=JVPuAu0VVXfk-f_1`}
           />
         </div>
         <div className="portafolioSecundario">
@@ -73,6 +74,7 @@ function App() {
             carateristicas="podes eligir un medico y el horario disponible,agregar un nuevo medico."
             link="https://github.com/abaduna/turnos-express-react"
             funcion={["Elegir el médico y los horarios disponibless","Seleccionar una hora disponible","Agregar un nuevo medico"]}
+            urlVido={`https://www.youtube.com/embed/HKVo-9HtSzE?si=f5Kb_ssDd0VD2U1s`}
           />
         </div>
       </div>
