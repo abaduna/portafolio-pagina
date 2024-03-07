@@ -10,7 +10,8 @@ const ModalComponet = ({
   carateristicas,
   link,
   funcion,
-  urlVido
+  urlVido,
+  urlNative
 }) => {
   const [show, setShow] = useState(false);
 
@@ -36,7 +37,7 @@ const ModalComponet = ({
           tecnologias usadas {tecnologis}
           <br />
           {carateristicas}
-          podes ver el codigo <a href={link} target="_blank">aca</a>
+          .Podes ver el codigo <a href={link} target="_blank">aca</a>
           <img className="image" src={img}></img>
           {<ul>
               {funcion?.map(caract=>(
@@ -45,8 +46,8 @@ const ModalComponet = ({
               
               
             </ul> }
-            <a href={urlVido}  target="_blank"> Video en funcionamento</a>
-            
+            <a href={urlVido}  target="_blank"> Video en funcionamento</a><br/>
+            <a href={urlNative}  target="_blank"> Video en funcionamento en la app</a>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ModalComponet from "./componets/Modal";
 import turnos from "../src/asets/img/turnos.jpg";
-import reproductor from "./asets/img/reproductor.jpg";
+import ventas from "./asets/img/ventas.png";
 import Contacto from "./componets/Contacto";
 import Footer from "./componets/Foter";
 import fondo from "./asets/img/fondo.jpg";
@@ -53,15 +53,17 @@ function App() {
           />
         </div>
         <div className="portafolioSecundario">
-          <h3>Reproductor de musica</h3>
-          <p>React Express</p>
+          <h3>Sistema de ventas</h3>
+          <p>React-Express-React Native</p>
           <ModalComponet
-            title="Reproductor de musica"
-            tecnologis="React Express"
-            img={reproductor}
-            carateristicas="Reproductos de musica que descarga musica de youtube"
-            link="https://github.com/abaduna/reproducto-musica-react-express"
-            funcion={["reproduce una lista de canciones","se puede descargar de youtube(beta)","se puede adelantar y pausar"]}
+            title="Sistema de ventas"
+            tecnologis="React-Express-React Native"
+            img={ventas}
+            carateristicas="Sistema para anotar ventas"
+            link="https://github.com/abaduna/fullstack-express-react-react-native"
+            funcion={["Anotar ventas","Borrar venta"]}
+            urlVido={`https://youtu.be/N1dSycykBzs`}
+            urlNative={"https://youtube.com/shorts/7C6zhWorDdk?feature=share"}
           />
         </div>
         <div className="portafolioPrimario">
