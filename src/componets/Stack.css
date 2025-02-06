@@ -1,0 +1,40 @@
+.stack-container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .stack-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .stack-item {
+    width: 120px;
+  }
+  
+  .stack-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .stack-item p {
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+  
+  .stack-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
