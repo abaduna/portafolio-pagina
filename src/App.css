@@ -22,10 +22,12 @@ margin: 0 auto;
 font-size: larger;
 }
 .portafolio{
+  
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .portafolioPrimario{
   justify-content: center;
@@ -76,9 +78,10 @@ font-size: larger;
 }
 .btn-menu{
   outline: none!;
-  border: 1px solid rgba(205, 99, 12, 0.857);
+  border: 1px solid rgba(68, 68, 68, 0.857);
   position: fixed;
-  background-color: rgba(205, 99, 12, 0.711);
+  background-color: rgba(0, 0, 0, 0.711);
+  color: white;
   border-radius: 25px;
   padding: 15px;
   bottom: 20px;

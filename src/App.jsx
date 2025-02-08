@@ -100,6 +100,7 @@ function App() {
       <div className="stack-container">
         <Stack/>
       </div>
+      <br/>
       <div className="portafolio"  id="porfolio">
         <motion.h2
         initial={{opacity:0,y:100}}
