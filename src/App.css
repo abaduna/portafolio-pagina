@@ -38,8 +38,10 @@ font-size: larger;
   align-items: center;
   flex-direction: column;
 }
+
 .portafolioSecundario{
   justify-content: center;
+
 
   height: 50vh;
   background-color: rgba(204, 144, 95, 0.445);
@@ -60,9 +62,7 @@ font-size: larger;
   
   
 }
-.title-contanto{
- 
-}
+
 .foter {
   background-color: black;
   width: 100%;
@@ -71,7 +71,8 @@ font-size: larger;
   text-align: center;
 }
 .body{
-  background-color: rgba(187, 99, 27, 0.26);
+  background-color: rgba(179, 179, 179, 0.26);
+  color: black;
 }
 .btn-menu{
   outline: none!;

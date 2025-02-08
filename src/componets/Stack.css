@@ -1,40 +1,20 @@
 .stack-container {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .stack-container h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .stack-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .stack-item {
-    width: 120px;
-  }
-  
-  .stack-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .stack-item p {
-    margin-top: 8px;
-    font-size: 1rem;
-  }
-  
-  .stack-category {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
-  }
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.stack-item {
+  margin: 10px; /* Space between items */
+  padding: 15px; /* Padding inside each item */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 8px; /* Rounded corners for items */
+  text-align: center; /* Center text */
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.stack-item:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  background-color: #e9ecef; /* Change background on hover */
+}
