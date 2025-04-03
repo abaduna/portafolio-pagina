@@ -78,7 +78,7 @@ const ModalComponent = ({
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <img className="img-fluid rounded shadow-sm mb-4" src={img} alt={title} />
+                  <img className="img-fluid rounded shadow-sm mb-4" style={{ width: '100%', height: 'auto', objectFit: 'contain' }} src={img} alt={title} />
                 </motion.div>
 
                 {funcion && funcion.length > 0 && (

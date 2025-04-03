@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ModalComponet from "./componets/Modal";
-import turnos from "../src/asets/img/turnos.jpg";
-import ventas from "./asets/img/ventas.png";
+import recetas from "./asets/img/recetas.jpeg"
 import Contacto from "./componets/Contacto";
 import Footer from "./componets/Foter";
 import fondo from "./asets/img/fondo.jpg";
@@ -18,7 +17,7 @@ function App() {
     <div className="body">
       <div className="menu">
         <button className="btn-menu" onClick={() => setSeeMenu(!seeMenu)}>Menu</button>
-        {seeMenu && <div className="fixded-Menu"><Menu/></div>}
+        {seeMenu && <div className="fixded-Menu"><Menu /></div>}
       </div>
       <div className="contenedor" id="inicio">
         <img className="imagefondo" src={fondo} alt="fondo" />
@@ -53,7 +52,7 @@ function App() {
           </motion.h2>
         </div>
       </div>
-      
+
       <div className="about" id="about">
         <motion.p
           initial={{ opacity: 0, y: 100 }}
@@ -98,22 +97,22 @@ function App() {
         </motion.p>
       </div>
       <div className="stack-container">
-        <Stack/>
+        <Stack />
       </div>
-      <br/>
-      <div className="portafolio"  id="porfolio">
+      <br />
+      <div className="portafolio" id="porfolio">
         <motion.h2
-        initial={{opacity:0,y:100}}
+          initial={{ opacity: 0, y: 100 }}
 
-        whileInView={{opacity:1,y:0,scale:[1,2,1]}}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{duration:1}}
+          whileInView={{ opacity: 1, y: 0, scale: [1, 2, 1] }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
         >Proyectos</motion.h2>
-       <hr/>
+        <hr />
 
 
 
-        <motion.div 
+        <motion.div
           className="portafolioPrimario"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -135,54 +134,54 @@ function App() {
             urlVido={`https://www.youtube.com/embed/qtgtLXWalT0?si=JVPuAu0VVXfk-f_1`}
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="portafolioSecundario"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1 }}
         >
-          <h3>Sistema de ventas</h3>
-          <p>React-Express-React Native</p>
+          <h3>To-Do List </h3>
+          <p>Springboot React</p>
           <ModalComponet
-            title="Sistema de ventas"
-            tecnologis="React-Express-React Native"
-            img={ventas}
-            carateristicas="Sistema para anotar ventas"
-            link="https://github.com/abaduna/fullstack-express-react-react-native"
-            funcion={["Anotar ventas","Borrar venta"]}
-            urlVido={`https://youtu.be/N1dSycykBzs`}
-            urlNative={"https://youtube.com/shorts/7C6zhWorDdk?feature=share"}
+            title="To-Do List "
+            tecnologis="Springboot React"
+            img={"https://media.licdn.com/dms/image/v2/D4D22AQHtENsRnQ5cZQ/feedshare-shrink_1280/B4DZTTx6DGHYAk-/0/1738719863622?e=1746662400&v=beta&t=wJKx4i8GZukkPcrFKzATrxFXNx-6Firqy3ARMywJmjU"}
+            carateristicas="To do list con testing 80% coverage"
+            link="https://github.com/abaduna/react-testingToDo.git"
+            funcion={["Agregar tareas", "Eliminar tareas", "Marcar como completadas"]}
+
+
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           className="portafolioPrimario"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1, type: "spring" }}
         >
-          <h3>Turnos</h3>
+          <h3>Recetas</h3>
 
-          <p>React Express SQL</p>
+          <p>Flutter Springboot</p>
           <ModalComponet
 
-            title="Turnos"
-            tecnologis="React Express SQL"
-            img={turnos}
-            carateristicas="podes eligir un medico y el horario disponible,agregar un nuevo medico."
-            link="https://github.com/abaduna/turnos-express-react"
-            funcion={["Elegir el médico y los horarios disponibless","Seleccionar una hora disponible","Agregar un nuevo medico"]}
-            urlVido={`https://www.youtube.com/embed/HKVo-9HtSzE?si=f5Kb_ssDd0VD2U1s`}
+            title="Recetas"
+            tecnologis="Flutter Springboot"
+            img={recetas}
+            carateristicas="podes elegir una receta y ver los ingredientes,agregar una nueva receta."
+            link="https://github.com/abaduna/Springboot-Recipes "
+            funcion={["Elegir la receta", "Ver los ingredientes", "Agregar una nueva receta"]}
+
           />
         </motion.div>
       </div>
       <div className="contacto" id="contacto">
         <motion.h3 className="title-contanto"
-         initial={{opacity:0,y:100}}
-         whileInView={{opacity:1,y:0,scale:[1,2,1]}}
-         viewport={{ once: true, amount: 0.5 }}
-         transition={{duration:1}}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, scale: [1, 2, 1] }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
         >Contacto</motion.h3>
         <Contacto className="form" />
       </div>
